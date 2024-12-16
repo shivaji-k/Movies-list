@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <style>
+        .movie-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .movie-item img {
+            width: 100px;
+            height: 150px;
+            margin-right: 10px;
+        }
+        .movie-detail {
+            margin-top: 20px;
+        }
+        .movie-detail img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search movies...">
+    <button onclick="searchMovies()">Search</button>
+    <ul id="movieList"></ul>
+    <div id="movieDetail" class="movie-detail"></div>
+    <script src="script.js"></script>
+</body>
+</html>
